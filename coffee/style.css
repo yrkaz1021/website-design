@@ -1,3 +1,7 @@
+/*imports the google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 /*CSS Reset*/
 * {
     margin: 0;
@@ -5,15 +9,38 @@
 }
 
 body{
+    font-family: Roboto, Arial, sans-serif;
+
     line-height: 1.5;
 }
 
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'Noto Serif', serif;
+   margin-bottom: 0.5rem;
+}
+/****************** colours ******************/
+.bg-primary{ background-color: #7a4b2e;}
+.bg-light{ background-color: #ffffff;}
+.bg-dark{ background-color: #363029;}
+.bg-muted{ background-color: #f8f6f5;}
+
+.text-primary{ color: #7a4b2e;}
+.text-light{ color: #ffffff;}
+.text-dark{ color: #363029;}
+.text-muted{ color: #f8f6f5;}
 /****************** swatches ******************/
+.swatches { 
+    display: flex; /*oraganize children elements in a line*/
+    gap: 1rem;
+}
 .swatch .swatch-value{ 
-    background-color: black;
+
     aspect-ratio: 1/1;
     width: 4rem; /*em - root font size (16px) */
     border-radius: 100%;
-
+    box-shadow: 0 0.1rem 0.2rem 0.1rem rgba(54, 48, 41, 0.2);
 }
 
+.swatch .swatch-name {
+    text-align: center;
+}

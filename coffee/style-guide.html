@@ -12,13 +12,15 @@
 <body>
  <main>
 
+ <main class="container">
 <h1>coffee shop style guide</h1> 
 <p>Design tokens and reusable styles for the website</p>
 
 <!--colour palette-->
-<section id="colours">
+ <section id="colours" class="m-2 p-2 shadow-dark">
     <h2>colour palette</h2>
-    <article class="swatches">
+    
+    <article class="swatches d-flex gap-2">
 
         <!--colour swatch-->
         <div class="swatch">
@@ -47,26 +49,84 @@
     </article>
 </section>
 
-<section id="typography">
-    <h2>typography</h2>
+<section id="typography" class="m-2 p-2 shadow-dark">
+    <h2>typography</h2> 
 
     <h1 class="heading-xl"> heading xl - coffee shop </h1>
     <h2 class="heading-lg"> heading lg - freshly brewed</h2>
     <p>Body text - Used for general descriptions</p>
     <p class="text-muted bg-dark"> muted text - for subtle details</p>
 
+ <!-- Spacing and Sizing -->
+        <section id="spacing" class="m-2 p-2 shadow-dark">
+            <h2>Spacing and Sizing</h2>
+
+            <div class="bg-muted p-0 m-1">.p-0 - No Padding</div>
+            <div class="bg-muted p-1 m-1">.p-1 - Small Padding</div>
+            <div class="bg-muted p-2 m-1">.p-2 - Normal Padding</div>
+            <div class="bg-muted p-3 m-1">.p-3 - Large Padding</div>
+        </section>
+
+
+
+
+    <p class="line-1">single line cutoff - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis sapiente cupiditate modi itaque? Nam incidunt quibusdam a molestias autem voluptate laboriosam fugit, quam aut ipsum velit animi esse tenetur officiis unde officia. Quibusdam vero repellendus possimus culpa magni, impedit illum cumque libero facilis recusandae consequuntur. Quos eius iste excepturi atque quisquam recusandae odit? Amet quis voluptatem alias reprehenderit autem? Quisquam earum quae dolor. Vitae reprehenderit aperiam doloribus vel aut ab vero iusto corrupti non nemo ducimus corporis, iure repudiandae mollitia molestiae asperiores? Laborum nulla est dolores quo, asperiores cupiditate odit ad laudantium quasi doloremque. Illum ex aspernatur beatae dolores! Accusamus rem ab eius sunt minus magni nihil recusandae vel earum fugiat dolorum voluptatem corrupti illo quidem distinctio adipisci nam maxime voluptatum molestias unde voluptatibus quas, ratione soluta. Beatae delectus quidem, voluptatum modi doloremque corrupti ullam assumenda labore, eaque nemo libero, voluptate ipsa est molestias reprehenderit. Nostrum, architecto accusamus quasi fuga ab iure eaque consequuntur esse repudiandae nemo aliquam velit dolore facere similique voluptas amet odit. Odit eius, nesciunt neque debitis aut harum nam atque blanditiis nisi quas laboriosam soluta voluptate aperiam officiis incidunt nulla. Itaque debitis temporibus repellendus ad error reprehenderit quos! Ab numquam fuga expedita exercitationem voluptas reprehenderit ad.</p>
+    <p class="line-2">double line cutoff - Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reprehenderit veritatis doloremque veniam esse itaque aut deserunt dicta, a quaerat, saepe ab voluptatem placeat eos facere libero praesentium. Dolorum possimus aspernatur enim ipsa, aliquid reprehenderit odio. Mollitia porro architecto iste. Architecto ipsam perferendis repellat sit et sapiente illum pariatur sequi nesciunt libero corporis dolor suscipit minus, provident necessitatibus, animi maxime error quia magni! Cumque veritatis repudiandae maiores eius. Libero exercitationem distinctio inventore sapiente repellendus deleniti sint quis, quia nostrum, accusamus animi officiis et vero voluptatem mollitia natus quasi sed repudiandae atque, velit optio iure ea ad? Nihil saepe ad earum! Architecto, eum facilis, nulla quis, molestias asperiores et similique officiis modi totam quae. Maiores dolorum cumque repellat eaque id officia nobis autem numquam voluptatem dolores, perspiciatis assumenda neque nisi corporis, consequatur, est molestias sequi ad quasi architecto? Ipsam impedit quae culpa, id repudiandae accusantium, repellendus voluptas placeat corrupti quos temporibus quidem sed delectus maxime possimus? Vero rem ducimus unde delectus nam eveniet rerum! Harum perspiciatis cupiditate reprehenderit maxime vero dignissimos ratione dolorem fuga numquam quibusdam. Nulla, odit! Maxime earum iusto voluptas laborum, enim quasi sit eligendi ratione consequuntur inventore alias illum? Culpa tenetur ullam veniam cum asperiores neque soluta tempore?</p>
 </section>
+
+ <!-- Layout Utils -->
+        <section id="layout" class="m-2 p-2 shadow-dark">
+            <h2>Layout Utils</h2>
+
+            <div class="d-flex flex-between">
+                <strong>Label</strong> <!-- bold -->
+                <span>Value</span> <!-- text -->
+            </div>
+
+            <div class="grid-2col gap-2 m-2">
+                <div class="bg-muted p-2">Col 1</div>
+                <div class="bg-muted p-2">Col 2</div>
+            </div>
+
+            <div class="grid-3col gap-2 m-2">
+                <div class="bg-muted p-2">Col 1</div>
+                <div class="bg-muted p-2">Col 2</div>
+                <div class="bg-muted p-2">Col 3</div>
+            </div>
+        </section>
+
 
 
 <!--Componenets-->
-<section id="components">
+<section id="components" class="m-2 p-2 shadow-dark">
     <h2 Components=""></h2>
 
     <!--Product Image-->\
-    <figure class="product-image">
+    <figure class="product-image"> 
         <img src="assets/coffee.png" alt="coffee cup"/>
         <figcaption class="product-tag" >50% off - &euro;2.50</figcaption>>
     </figure>
+
+     <figure class="product-image">
+        <img src="assets/cappucino.jpg" alt="coffee cup"/>
+        <figcaption class="product-tag" >50% off - &euro;2.50</figcaption>>
+     </figure>
+
+     <figure class="product-image">
+        <img src="assets/decaf.jpg" alt="coffee cup"/>
+        <figcaption class="product-tag" >50% off - &euro;2.50</figcaption>>
+     </figure>
+
+      <p>Tag Styles:</p>
+            <ul class="tags m-1">
+                <li class="tag-item">Tag 1</li>
+                <li class="tag-item">Tag 2</li>
+            </ul>
+
+            <div class="tags m-1">
+                <a href="#" class="tag-item">Tag 1</a>
+                <a href="#" class="tag-item">Tag 2</a>
+            </div>
 </section>
 
 
